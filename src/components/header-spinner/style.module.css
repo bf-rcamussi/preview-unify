@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation {
+    width: 40px;
+    height: 40px;
+
+}
+.titleContainer {
+    position: relative;
+    margin-left: 0px;
+    overflow: hidden;
+    animation: type 2s linear;
+}
+.title {
+    font-family: bit;
+    font-size: 29px;
+    color: #fff;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+@keyframes type {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 300px;
+    }
+}

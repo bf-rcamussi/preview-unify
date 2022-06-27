@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import Main from 'components/main/Main';
 import './App.css';
+import { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { context } from 'context/context';
+
 
 function App() {
+  const ref = useRef();
+  const [scroll, setScroll] = useState(null); 
+
+  useEffect(() => {
+    import("locomotive-scroll").then((locomotiveModule) => {
+      const scrollInstance = new locomotiveModule.default({
+        el: ref.current,
+        smooth: true,
+        lerp: 0.05,
+        multiplier: 1,
+        firefoxMultiplier: 0.1
+      });
+      gsap.registerPlugin(ScrollTrigger);
+      setScroll(scrollInstance);
+    });    
+  }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <context.Provider value={{scroll, setScroll}}>
+      <div className="App">
+        <main ref={ref} data-scroll-container>
+          <Main/>
+        </main>
+      </div>
+    </context.Provider>
   );
 }
 

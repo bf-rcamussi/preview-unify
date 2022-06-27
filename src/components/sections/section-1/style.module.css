@@ -1,0 +1,180 @@
+/* Layout */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #E7E6E4;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: 200px 100%;
+    background-image:
+        linear-gradient(to right, rgba(128, 128, 128, 0.11) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(128, 128, 128, 0) 1px, transparent 1px);
+}
+
+.logoContainer {
+    height: 35px;
+    padding-top: 47px;
+    padding-left: 52px;
+    margin-bottom: 188px;
+}
+
+.logo {
+    object-fit: contain;
+    height: 80px;
+    max-height: 34px;
+}
+.gradientContainer {
+    margin-bottom: 40px;
+}
+.hexContainer {
+    position: absolute;
+    top: -30px;
+    right: 40vw;
+    transform: translateY(0);
+    display: block;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--desktop-padding);
+    flex: 1;
+}
+
+.buttonsContainer {
+    display: flex;
+    width: 100%;
+}
+/* layout */
+
+
+/* titles */
+.text {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #252D29;
+    margin-bottom: 65px;
+    max-width: 200px;
+}
+.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 102px;
+    line-height: 110px;
+    letter-spacing: -1.34211px;
+    font-family: montreal;
+    color: #767270;
+    overflow: hidden;
+}
+
+.subtitle {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 110px;
+    letter-spacing: -1.97368px;
+    color: #252D29;
+    overflow: hidden;
+}
+/* titles */
+
+
+/* buttons */
+.btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.33333px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: bit;
+    width: fit-content;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 68px;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: #38F997;
+    padding: var(--desktop-padding);
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 68px;
+    transition: .2s;
+}
+.btn2 {
+    padding-left: 68px;
+}
+.btn:hover {
+    background-color: #272727;
+    color: #fff;
+}
+/* buttons */
+
+/* text animations helpers*/
+.title span {
+    display: block;
+}
+
+.appearUp {
+    overflow: hidden;
+}
+
+.appearUp span {
+    transform: translateY(100%);
+    display: block;
+}
+
+.appearRight {
+    overflow: hidden;
+}
+.appearRight span {
+    transform: translateX(-100%);
+    display: block;
+}
+/* text animation helpers */
+
+@media screen and (orientation: portrait) {
+    .hexContainer {
+        position: absolute;
+        top: -200px;
+        right: -40px;
+    }
+    .logoContainer {
+        height: 35px;
+        padding-top: 47px;
+        padding-left: 52px;
+        margin-bottom: 136px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 47px;
+        line-height: 48px;
+        letter-spacing: -0.618421px;
+    }
+    .subtitle {
+        font-size: 65px;
+        line-height: 44px;
+        letter-spacing: -0.855263px;
+    }
+    .buttonsContainer{
+        flex-direction: column;
+    }
+    .btn1, .btn2 {
+        padding: 20px 40px;
+        min-width: 80%;
+        text-align: left;
+    }
+}
