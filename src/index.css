@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   box-sizing: border-box;
 }
 
+.can-scroll {
+  height: auto;
+  overflow: scroll;
+}
 @font-face {
   font-family: bit;
   src: url(./assets/fonts/PPNeueBit-Bold.ttf) format('truetype');

@@ -64,12 +64,10 @@ const Section1 = () => {
                 <div className={s.gradientContainer}>
                     <AnimationPlayer 
                         animationData={gradient}
-                        behavior="wait"
-                        waitTime={3000}
-                        width={140}
-                        loop="false"
-                        id="gradient1"
-                        container={sectionRef.current}
+                        delay={3000}
+                        width={135}
+                        height={40}
+                        id={s.gradientContainer}
                     />
                 </div>
                 <div className={s.titleContainer}>

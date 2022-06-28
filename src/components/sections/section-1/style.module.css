@@ -29,6 +29,9 @@
 }
 .gradientContainer {
     margin-bottom: 40px;
+    width: fit-content;
+    height: fit-content;
+    height: 100px;
 }
 .hexContainer {
     position: absolute;

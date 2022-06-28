@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     background-color: #282828;
-    position: absolute;
+    position: fixed;
     animation: slide-up 1s var(--initial-waiting-time) cubic-bezier(1,.66,.83,.67) forwards;
     overflow: hidden;
     display: block;

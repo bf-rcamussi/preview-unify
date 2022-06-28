@@ -1,4 +1,3 @@
-import { useLottie } from "lottie-react";
 import React from "react";
 import s from './style.module.css'
 import HeaderSpinner from "components/header-spinner/HeaderSpinner";
