@@ -1,17 +1,102 @@
+/* layout */
 .container {
     min-height: 100vh;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    background-size: 200px 100%;
+    background-image:
+        linear-gradient(to right, rgba(128, 128, 128, 0.11) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(128, 128, 128, 0) 1px, transparent 1px);
 }
-.gradientContainer {
+.titlesContainer, .text {
+    padding: var(--desktop-padding);
+}
+.topGradientContainer {
     right: 180px;
     top: -50px;
     z-index: 10;
     display: block;
     position: absolute;
+}
+
+.midleGradientContainer {
+    
+}
+
+.titlesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* layout */
+
+
+/* text */
+.overTitle {
+    font-family: 'Blaka Ink';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    font: bit;
+    margin-top: 172px;
+    margin-bottom: 32px;
+    max-width: 956px;
+    text-align: left;
+    justify-content: flex-start;
+}
+.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 102px;
+    line-height: 110px;
+    letter-spacing: -1.34211px;
+    color: #000000;
+    font: montreal;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+.text {
+    font-family: montreal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    color: #272727;
+    max-width: 480px;
+    margin-bottom: 100px;
+}
+/* text */
+
+@media screen and (orientation: portrait) {
+    .container {
+        min-height: 0;
+        align-items: flex-start;
+    }
+    .topGradientContainer {
+        right: 10px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 47px;
+        line-height: 48px;
+        letter-spacing: -0.618421px;
+        color: #000000;
+    }.overTitle {
+        margin-top: 50px;
+    }
+    .midleGradientContainer {
+        margin-bottom: 50px;
+    }
 }

@@ -5,9 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/PPNeueMontreal-Book.ttf';
 import './assets/fonts/PPNeueBit-Bold.ttf';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import TextPlugin from 'gsap/TextPlugin';
+import gsap from 'gsap';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 root.render(
   <React.StrictMode>

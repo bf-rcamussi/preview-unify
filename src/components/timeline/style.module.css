@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    height: 600px;
+    width: 80%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 600px;
+    min-width: 900px;
+}
+.sideBar {
+    display: flex;
+    height: 100%;
+}
+
+.yearsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overTitle {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 115px;
+    line-height: 110px;
+    letter-spacing: 4.79px;
+    color: #252D29;
+    margin-bottom: 100px;
+    flex: 1;
+}
+.title {
+    font-family: montreal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 82px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -1px;
+    color: #252D29;
+}
+
+.gradient {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    z-index: 4;
+    background: rgb(255,147,0);
+    background: linear-gradient(180deg, rgba(255,147,0,1) 0%, rgba(255,61,0,1) 23%, rgba(204,12,255,1) 50%, rgba(92,76,255,1) 78%, rgba(20,252,228,1) 100%); 
+}
+ 
+.gradient::after{
+    content: '';
+    background: #38F997;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    position: absolute;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.line {
+    height: 100%;
+    position: absolute;
+    width: 2px;
+    left: 9px;
+    top: 0;
+    background-color: #38F997;
+    display: block;
+}
+
+.indicator {
+    height: 100%;
+    position: relative;
+    width: 20px;
+    margin: 0 10px;
+}
+
+
+.year {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.year.active {
+    color: #38F997;
+}
+
+
+.textContainer {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}

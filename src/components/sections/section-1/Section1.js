@@ -10,7 +10,8 @@ import { context } from "context/context";
 
 const Section1 = () => {
     const sectionRef = useRef(null);
-    const {scroll} = useContext(context);
+    const {scroll, isMobile} = useContext(context);
+    
     useEffect(() => {
         gsap.to(`.${s.appearUp} span`, {
             y: 0,
@@ -34,7 +35,7 @@ const Section1 = () => {
     useEffect(() => {
         gsap.fromTo(`.${s.hexContainer}`,
         {
-            y: 100,
+            y: 200,
         }, {
             y: 0,
             duration: 2,
@@ -45,11 +46,11 @@ const Section1 = () => {
     }, [])
 
     return (
-        <section className={s.container} data-scroll-section>
+        <section className={s.container} data-scroll-container>
             <div  className={s.logoContainer}>
                 <img className={s.logo} src={require('assets/Logos/unifi-protocol-logo.svg').default} alt="unifi logo"/>
             </div>
-            <div className={s.hexContainer}>
+            <div className={s.hexContainer} data-scroll-section>
                 <HeroHexagons/>
             </div>
             <div className={s.textContainer}>

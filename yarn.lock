@@ -19,6 +19,13 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
+"@ashthornton/asscroll@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@ashthornton/asscroll/-/asscroll-2.0.7.tgz#2e9624508ad9997036fd1952c725f593943beaf8"
+  integrity sha512-8OcuNdd7B1Edi2ERpWR9f6jy6ScpmZWIpKBVt4FyeGmK3ojQBpQ+oU7cDxn11aGAzGp7ULQnMb518gtodII7jQ==
+  dependencies:
+    "@unseenco/e" "^2.2.2"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.8.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -1183,6 +1190,13 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@grcmichael/gscroll@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@grcmichael/gscroll/-/gscroll-1.0.15.tgz#e51f0dd0f5aa2ca8d0c7fb0c0ece442f6404ebaf"
+  integrity sha512-zJX6P0Yxgb4Bt/EGZa1NSkyuVonUsYiKFKMBHNxJQaWZjZvXgpNUZfd0EbO1NrI5anr0xRmLQVGIVsn57usvIw==
+  dependencies:
+    gsap "^3.6.1"
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -2153,6 +2167,13 @@
   dependencies:
     "@typescript-eslint/types" "5.29.0"
     eslint-visitor-keys "^3.3.0"
+
+"@unseenco/e@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@unseenco/e/-/e-2.2.2.tgz#aa013949789b9a65e61bb461fae9bf8f40f5a121"
+  integrity sha512-7d+CKXw5rJDz1zkKiAQQGBLOUZ1JqV+c9pTTERSKwfwjjq6sJkoDbo+L0usmu7kDzIUxJKWOtm1JoCTrYNHIZw==
+  dependencies:
+    selector-set "^1.1.5"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -4587,7 +4608,7 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, 
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-gsap@^3.10.4:
+gsap@^3.10.4, gsap@^3.6.1:
   version "3.10.4"
   resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.10.4.tgz#db89a6b8f6d5cb76e274eae822cbc1aa4d31e88f"
   integrity sha512-6QatdkKxXCMfvCW4rM++0RqyLQAzFX5nwl3yHS0XPgkZBkiSEY3VZVbMltrdtsbER/xZonLtyHt684wRp4erlQ==
@@ -7694,6 +7715,11 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==
+
+selector-set@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/selector-set/-/selector-set-1.1.5.tgz#60c135aea482b6f46a2d95ad72058927690a8634"
+  integrity sha512-6SQw6yMew5iOZ8/cDHDEnJWRM4ot2mxP6szZyF5ptrBogw4AcS4EXRj/8BUfgAMwVfdL84qpModlBMOl2NVrsQ==
 
 selfsigned@^2.0.1:
   version "2.0.1"

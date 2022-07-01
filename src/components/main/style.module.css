@@ -1,3 +1,14 @@
 .container {
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.canScroll {
+    max-height: fit-content;
+    overflow: visible;
+}
+
+.modalHandler {
+    width: 100%;
     position: relative;
 }

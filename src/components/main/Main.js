@@ -1,25 +1,42 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import LoadingScreen from "components/loading-screen/LoadingScreen";
 import s from './style.module.css';
 import Section1 from "components/sections/section-1/Section1";
 import { context } from "context/context";
 import { useEffect } from "react";
 import Section2 from "components/sections/section-2/Section2";
+import Section3 from "components/sections/section-3/Section3";
+import Section4 from "components/sections/section-4/Section4";
+import Section5 from "components/sections/section-5/Section5";
+import Section6 from "components/sections/section-6/Section6";
 
 
 const Main = () => {
-    const {scroll} = useContext(context);
+    const {scroll, canScroll, setCanScroll} = useContext(context);
+
     useEffect(() => {
         setTimeout(() => {
-            document.body.classList.add('can-scroll')
-        }, 5000)
-    }, [scroll]);
+            setCanScroll(true);
+        }, 2000)
+    }, []);
 
+    useEffect(() => {
+        if (canScroll) {
+            scroll.update()
+            scroll.start()
+        }
+    }, [canScroll])
     return (
-        <div className={s.container}>
-            <LoadingScreen/>
-            <Section1/>
+        <div className={`${s.container} ${canScroll && s.canScroll}`}>
+            <div className={s.modalHandler}>
+                <LoadingScreen/>
+                <Section1/>
+            </div>
             <Section2/>
+            <Section3/>
+            <Section4/>
+            <Section5/>
+            <Section6/>
         </div>
     )
 }

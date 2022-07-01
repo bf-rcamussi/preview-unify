@@ -28,7 +28,7 @@
     max-height: 34px;
 }
 .gradientContainer {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     width: fit-content;
     height: fit-content;
     height: 100px;
@@ -59,34 +59,34 @@
 .text {
     font-family: bit;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 24px;
     line-height: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #252D29;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
     max-width: 200px;
 }
 .title {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 102px;
     line-height: 110px;
-    letter-spacing: -1.34211px;
-    font-family: montreal;
+    letter-spacing: -0.01em;
     color: #767270;
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .subtitle {
     font-family: bit;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 150px;
     line-height: 110px;
-    letter-spacing: -1.97368px;
-    color: #252D29;
+    letter-spacing: -0.015em;
+    color: #272727;
     overflow: hidden;
 }
 /* titles */
@@ -95,7 +95,7 @@
 /* buttons */
 .btn {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 24px;
     line-height: 18px;
     text-align: center;
@@ -104,9 +104,9 @@
     color: #000000;
     font-family: bit;
     width: fit-content;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-right: 68px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 80px;
     cursor: pointer;
 }
 .btn1 {
@@ -157,9 +157,9 @@
     }
     .logoContainer {
         height: 35px;
+        padding: var(--desktop-padding);
         padding-top: 47px;
-        padding-left: 52px;
-        margin-bottom: 136px;
+        margin-bottom: 80px;
     }
     .title {
         font-weight: 400;
@@ -177,7 +177,11 @@
     }
     .btn1, .btn2 {
         padding: 20px 40px;
-        min-width: 80%;
+        width: 80%;
         text-align: left;
+    }
+    .gradientContainer {
+        margin-bottom: 40px;
+        height: 20px;
     }
 }

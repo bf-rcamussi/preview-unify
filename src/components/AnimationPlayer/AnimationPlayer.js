@@ -83,7 +83,7 @@ export default ({
     }, [ready])
 
     return (
-        <div style={{height: 600}}>
+        <div>
               <Player
                 width={width}
                 height={height}

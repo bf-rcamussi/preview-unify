@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ashthornton/asscroll": "^2.0.7",
+    "@grcmichael/gscroll": "^1.0.15",
     "@lottiefiles/lottie-interactivity": "^1.6.0",
     "@lottiefiles/react-lottie-player": "^3.4.7",
     "@testing-library/jest-dom": "^5.16.4",
