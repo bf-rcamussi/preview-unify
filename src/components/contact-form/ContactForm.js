@@ -2,6 +2,7 @@ import AnimationPlayer from "components/AnimationPlayer/AnimationPlayer";
 import React from "react";
 import s from './style.module.css';
 import gradient from 'assets/Json/underline-01.json';
+import bg from 'assets/Backgrounds/noise-background-06.jpg'
 
 
 const ContactForm = () => {
@@ -39,6 +40,7 @@ const ContactForm = () => {
                         Submit
                     </button>
             </form>
+            <img className={s.background} src={bg}/>
         </div>
     )
 }
