@@ -1,0 +1,104 @@
+.container {
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    align-items: flex-start;
+}
+.icons {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    display: block;
+}
+
+.overTitle {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: montreal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 102px;
+    line-height: 110px;
+    letter-spacing: -1.34px;
+    color: #252D29;
+    max-width: 570px;
+    margin-bottom: 40px;
+}
+
+.icons {
+    position: relative;
+
+}
+.imageWrap {
+    width: 288px;
+    height: 332px;
+}
+.hex {
+    width: 288px;
+    height: 332px;
+    object-fit: contain;
+    display: block;
+}
+.imageWrap {
+    position: relative;
+}
+.icon {
+    position: relative;
+    top: 200px;
+    left: 84px;
+}
+
+
+.hex1 {
+    position: absolute;
+}
+
+.hex2 {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    z-index: 2;
+}
+.hex3 {
+    top: 160px;
+    left: 440px;
+    position: absolute;
+}
+.hex4 {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 3;
+}
+.hex5 {
+    position: absolute;
+    top: 380px;
+    left: 350px;
+    z-index: 4;
+}
+
+@media screen and (orientation: portrait) {
+    .icons {
+        transform: scale(.5);
+        translate: 0 400px;
+    }
+}

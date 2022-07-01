@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    margin: 200px 0;
+    width: 100%;
+    justify-content: center;
+}
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    font-family: montreal;
+    color: #252D29;
+    flex: 1;
+    z-index: 2;
+}
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.24px;
+    color: #272727;
+    font-family: montreal;
+}
+.text:first-child {
+    margin-right: 40px;
+}
+.index {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #979797;
+    font-family: bit;
+    margin-bottom: 14px;
+}
+.index > span {
+    color: #252D29;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    padding: 60px 70px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn:hover {
+    background-color: #bdbdbd;
+}
+.btn:active {
+    scale: .95;
+}
+.btn1 {
+    transform: rotate(180deg);
+}
+.btn2 {
+    background-color: #E7E6E4;
+}
+
+
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    max-width: 600px;
+    min-height: 430px;
+    position: relative;
+}
+.paragraphs {
+    display: flex;
+    z-index: 2;
+}
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+.gradient {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    position: relative;
+    display: block;
+}
+.gradient::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    right: 0;
+    top: 0;
+    background-color: #38f997;
+    display: block;
+    z-index: 4;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #38f997;
+    left: 0;
+    z-index: 1;
+    left: 0;
+}
+.indicator {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    left: 0;
+}
+.imageGradient {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

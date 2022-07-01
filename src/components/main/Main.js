@@ -9,6 +9,8 @@ import Section3 from "components/sections/section-3/Section3";
 import Section4 from "components/sections/section-4/Section4";
 import Section5 from "components/sections/section-5/Section5";
 import Section6 from "components/sections/section-6/Section6";
+import Section7 from "components/sections/section-7/Section7";
+import Section8 from "components/sections/section-8/Section8";
 
 
 const Main = () => {
@@ -37,6 +39,8 @@ const Main = () => {
             <Section4/>
             <Section5/>
             <Section6/>
+            <Section7/>
+            <Section8/>
         </div>
     )
 }
