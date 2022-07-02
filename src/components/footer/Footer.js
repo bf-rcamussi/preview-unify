@@ -1,7 +1,10 @@
 import React from "react";
 import s from './style.module.css';
 import unify from 'assets/Logos/unifi-protocol-logo-negative.svg';
-
+import telegram from "assets/Logos/telegram-logo-negative.svg";
+import twitter from "assets/Logos/twitter-logo-negative.svg";
+import youtube from "assets/Logos/youtube-logo-negative.svg";
+import medium from "assets/Logos/medium-logo-negative.svg";
 
 const links = {
 
@@ -120,10 +123,24 @@ const Footer = () => {
                 </div>
             </div>
             <div className={s.bottomBar}>
-
+                <span className={s.rights}>@2022 All rights reserved.</span>
+                <div className={s.bottomIcons}>
+                    <a>
+                        <img src={telegram}/>
+                    </a>
+                    <a>
+                        <img src={twitter}/>
+                    </a>
+                    <a>
+                        <img src={youtube}/>
+                    </a>
+                    <a>
+                        <img src={medium}/>
+                    </a>
+                </div>
             </div>
             <div className={s.hexagons}>
-
+                
             </div>
         </footer>
     )

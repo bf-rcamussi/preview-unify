@@ -51,3 +51,32 @@
 .link:hover{
     color: #38F997;
 }
+
+.bottomBar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+.rights {
+    font-family: montreal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.bottomIcons {
+    right: 100px;
+    position: absolute;
+}
+.bottomIcons a {
+    margin-right: 10px;
+    cursor: pointer;
+}
