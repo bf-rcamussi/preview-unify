@@ -1,6 +1,6 @@
 import React from "react";
 import s from './style.module.css';
-import unify from 'assets/Logos/unifi-protocol-logo.svg';
+import unify from 'assets/Logos/unifi-protocol-logo-negative.svg';
 
 
 const links = {

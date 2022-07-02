@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    background-color: #272727;
+    padding: 100px 100px;
+    color: #fff;
+    justify-content: space-around;
+    background-size: 16.666vw 100%;
+    background-image:
+        linear-gradient(to right, rgba(128, 128, 128, 0.11) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(128, 128, 128, 0) 1px, transparent 1px);
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 210px;
+    height: 40px;
+}
+
+
+/*  */
+.colTitle {
+    font-family: bit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #38F997;
+    margin-bottom: 20px;
+}
+
+.link {
+    font-family: montreal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.link:hover{
+    color: #38F997;
+}
