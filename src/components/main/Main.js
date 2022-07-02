@@ -15,7 +15,7 @@ import Footer from "components/footer/Footer";
 
 
 const Main = () => {
-    const {scroll, canScroll, setCanScroll} = useContext(context);
+    const {scroll, canScroll, setCanScroll, isMobile} = useContext(context);
 
     useEffect(() => {
         setTimeout(() => {
@@ -36,7 +36,10 @@ const Main = () => {
                 <Section1/>
             </div>
             <Section2/>
-            <Section3/>
+            {
+                !isMobile && 
+                <Section3/>
+            }
             <Section4/>
             <Section5/>
             <Section6/>

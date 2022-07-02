@@ -16,3 +16,9 @@
 .timeline {
     z-index: 2;
 }
+
+@media screen and (orientation: portrait) {
+    .content {
+        left: 10px;
+    }
+}

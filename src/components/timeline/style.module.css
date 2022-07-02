@@ -113,3 +113,25 @@
     flex-direction: column;
     max-width: 800px;
 }
+
+@media screen and (orientation: portrait) {
+    .container{
+        width: 100%;
+    }
+    .textContainer {
+        padding: 5px;
+    }
+    .overTitle {
+        margin: 0;
+        flex: 1;
+        font-size: 47px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 1;
+        word-wrap: break-word;
+    }
+    .content {
+        min-width: 0;
+    }
+}
