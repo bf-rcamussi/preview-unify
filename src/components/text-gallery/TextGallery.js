@@ -23,6 +23,7 @@ const items = [
         text2: 'Premo vindico himenaeos oppeto euismod letalis genitus camur quis. Huic roto loquor eu capio porttitor feugiat pharetra obruo rhoncus.'
     }
 ]
+
 const TextGallery = () => {
     const [item, setItem] = useState(items[0]);
     const [index, setIndex] = useState(0);
@@ -92,6 +93,29 @@ const TextGallery = () => {
                                         visibility={[0,1]}
                                         width={99}
                                         height={77}
+                                    />
+                            </button>
+                    </div>
+
+                    <div className={s.buttonsMobile}>
+                            <button className={`${s.btn} ${s.btn1}`} onClick={() => {moveIndex(-1)}}>
+                                <AnimationPlayer
+                                    id={s.btn2}
+                                    animationData={arrowAnimation}
+                                    mode="trigger"
+                                    visibility={[0,1]}
+                                    width={80}
+                                    height={40}
+                                />
+                            </button>
+                            <button className={`${s.btn} ${s.btn2}`} onClick={() => {moveIndex(1)}}>
+                                    <AnimationPlayer
+                                        id={s.btn2}
+                                        animationData={arrowAnimation}
+                                        mode="trigger"
+                                        visibility={[0,1]}
+                                        width={80}
+                                        height={40}
                                     />
                             </button>
                     </div>

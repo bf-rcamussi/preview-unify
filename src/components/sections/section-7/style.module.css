@@ -101,4 +101,23 @@
         transform: scale(.5);
         translate: 0 400px;
     }
+    .titleSection {
+        max-width: 90%;
+        left: 0;
+        right: auto;
+        padding-left: 10px;
+        top: 50px;
+    }
+    .title {
+        font-size: 47px;
+        line-height: 48px;
+    }
+    .overTitle {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .icons {
+        translate: -40px 180px;
+        left: 0;
+    }
 }

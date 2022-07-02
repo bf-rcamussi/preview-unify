@@ -5,8 +5,13 @@ import lines from 'assets/Json/grid-vertical.json';
 import gradient from 'assets/Json/gradientbars-01.json';
 import gradient2 from 'assets/Json/underline-03.json';
 import Timeline from "components/timeline/Timeline";
+import { context } from "context/context";
+import { useContext } from "react";
+
 
 const Section5 = ({}) => {
+    const { isMobile } = useContext(context);
+
     return (
         <div className={s.container}>
             <div className={s.content}>
@@ -15,7 +20,7 @@ const Section5 = ({}) => {
                         mode={"scroll"}
                         animationData={gradient}
                         id={s.topGradient}
-                        visibility={[0, .5]}
+                        visibility={[0, 1]}
                         width={60}
                         height={200}
                     />
@@ -39,14 +44,17 @@ const Section5 = ({}) => {
                     </div>
                 </div>
             </div>
-            <div className={s.backgroundLines}>
-                <AnimationPlayer
-                    mode={"trigger"}
-                    animationData={lines}
-                    id={s.backgroundLines}
-                    visibility={[0, .1]}
-                />
-            </div>
+           { 
+                !isMobile &&
+                <div className={s.backgroundLines}>
+                    <AnimationPlayer
+                        mode={"trigger"}
+                        animationData={lines}
+                        id={s.backgroundLines}
+                        visibility={[0, .1]}
+                    />
+                </div>
+            }
         </div>
     )
 }

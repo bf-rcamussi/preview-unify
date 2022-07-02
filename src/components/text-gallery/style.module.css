@@ -29,6 +29,11 @@
 .text:first-child {
     margin-right: 40px;
 }
+
+.buttonsMobile {
+    display: none;
+}
+
 .index {
     font-style: normal;
     font-weight: 700;
@@ -138,4 +143,33 @@
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+    .buttons {
+        display: none;
+    }
+    .buttonsMobile {
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+    .btn {
+        width: 50%;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .paragraphs {
+        flex-direction: column;
+    }
+    .text:first-child {
+        margin: 0 0 20px 0;
+    }
+    .index {
+        margin-left: 10px;
+    }
 }

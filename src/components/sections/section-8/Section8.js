@@ -23,7 +23,9 @@ const Section8 = () => {
             y: 0,
             scrollTrigger: {
                 trigger: `.${s.container}`,
-                scrub: true
+                start: 'top bottom',
+                scrub: true,
+                once: true
             }
         })
     })

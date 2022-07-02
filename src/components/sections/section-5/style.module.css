@@ -58,3 +58,24 @@
     width: 135px;
     height: 40px;
 }
+
+@media screen and (orientation: portrait) {
+    .textContainer {
+        max-width: 100%;
+    }
+    .content {
+        top: 0;
+        left: 0;
+    }
+    .textContainer {
+        margin: 0;
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 47px;
+        line-height: 48px;
+    }
+    .topGradient {
+        padding-right: 0;
+    }
+}

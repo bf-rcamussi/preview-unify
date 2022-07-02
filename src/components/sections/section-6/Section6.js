@@ -19,10 +19,11 @@ const Section6 = ({}) => {
             transform: 'translateY(-400px)',
             duration: 1,
             scrollTrigger: {
-                trigger: `.${s.hexContainer}`,
-                scrub: true
+                trigger: `.${s.container}`,
+                scrub: true,
+                start: 'top bottom',
             },
-            start: 'top bottom',
+            
             
         })
     }, [])

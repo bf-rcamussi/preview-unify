@@ -49,7 +49,7 @@ const VerticalTabs = () => {
         }, {
             y: 0,
             opacity: 1,
-            duration: 8,
+            duration: 1,
             ease: 'linear',
             scrollTrigger: {
                 trigger: `.${s.activeTitle}`,
@@ -59,6 +59,7 @@ const VerticalTabs = () => {
     }
 
     useEffect(() => {
+        textUp();
     }, [])
 
 
@@ -82,9 +83,6 @@ const VerticalTabs = () => {
 
     return (
         <div className={s.container}>
-
-            
-
             <div className={s.itemsContainer}>
             {
                 items.map((item, i) =>

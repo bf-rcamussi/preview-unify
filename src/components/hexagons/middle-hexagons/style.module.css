@@ -54,3 +54,9 @@
     align-items: center;
     height: 100vh;
 }
+
+@media screen and (orientation: portrait) {
+    .hexContainer {
+        height: auto;
+    }
+}

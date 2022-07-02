@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 .hexContainer {
     display: block;
@@ -16,10 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 100px;
+    padding-left: 100px;
 }
 .overTitle {
-    font-style: bit;
+    font-family: bit;
     font-weight: 700;
     font-size: 24px;
     line-height: 22px;
@@ -31,11 +32,27 @@
 .title {
     font-family: montreal;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 102px;
     line-height: 110px;
     letter-spacing: -1.34px;
     color: #252D29;
-    max-width: 960px;
+    max-width: 900px;
     margin-bottom: 40px;
+}
+
+@media screen and (orientation: portrait) {
+    .billboard {
+        margin-top: 350px;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 47px;
+        line-height: 48px;
+    }
+    .overTitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }

@@ -89,3 +89,17 @@
 }
 /* text */
 
+
+@media screen and (orientation: portrait) {
+    .title {
+        font-size: 47px;
+        line-height: 48px;
+    }
+    .overTitle {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .gradient {
+        display: none;
+    }
+}
