@@ -1,7 +1,6 @@
 import HeroHexagons from "components/hexagons/hero-hexagons/HeroHexagons";
 import React, { useContext, useEffect, useRef } from "react";
 import s from './style.module.css';
-import { LocomotiveScrollProvider, useLocomotiveScroll } from "react-locomotive-scroll";
 import AnimationPlayer from "components/AnimationPlayer/AnimationPlayer";
 import gradient from "assets/Json/underline-01.json";
 import gsap from "gsap";

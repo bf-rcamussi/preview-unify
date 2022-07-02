@@ -84,6 +84,39 @@ const Footer = () => {
                     <h5 className={s.colTitle}>
                         Our Products
                     </h5>
+                    <a className={s.link}>
+                        Trading
+                    </a>
+                    <a className={s.link}>
+                        Staking
+                    </a>
+                    <a className={s.link}>
+                        Cross Chain
+                    </a>
+                    <a className={s.link}>
+                        Report
+                    </a>
+                    <a className={s.link}>
+                        Government DAO
+                    </a>
+                </div>
+
+                <div className={s.col}>
+                    <h5 className={s.colTitle}>
+                        Community
+                    </h5>
+                    <a className={s.link}>
+                        Telegram
+                    </a>
+                    <a className={s.link}>
+                        Discord
+                    </a>
+                    <a className={s.link}>
+                        Twitter
+                    </a>
+                    <a className={s.link}>
+                        Medium
+                    </a>
                 </div>
             </div>
             <div className={s.bottomBar}>
