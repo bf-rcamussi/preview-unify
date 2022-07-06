@@ -56,7 +56,7 @@ const MiddleHexagons = () => {
                     </div>
                     <div className={s.imageContainer}>
                         <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} autoPlay loop/>
+                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
                         </div>
                         <img className={s.outline} src={outline}/>
                     </div>
@@ -65,7 +65,7 @@ const MiddleHexagons = () => {
                 <div className={`${s.row} ${s.row2}`}>
                     <div className={s.imageContainer}>
                         <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} autoPlay loop/>
+                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
                         </div>
                         <img className={s.outline} src={outline}/>
                     </div>
@@ -90,7 +90,7 @@ const MiddleHexagons = () => {
                 <div className={`${s.row} ${s.row3}`}>
                     <div className={s.imageContainer}>
                         <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} autoPlay loop/>
+                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
                         </div>
                         <img className={s.outline} src={outline}/>
                     </div>

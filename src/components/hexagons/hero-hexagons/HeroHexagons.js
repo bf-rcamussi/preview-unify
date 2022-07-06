@@ -55,7 +55,7 @@ export default () => {
                 data-scroll
                 className={`${s.hex} ${s.hex3}`}
             >
-                <video src={Hex3Video} className={`${s.hex3Image}`} autoPlay loop/>
+                <video src={Hex3Video} className={`${s.hex3Image}`} playsinline autoplay loop muted/>
             </div>  
         </div>        
         
