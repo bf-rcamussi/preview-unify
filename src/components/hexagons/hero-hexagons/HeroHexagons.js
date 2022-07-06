@@ -17,7 +17,7 @@ const HexVideo = () => {
             data-scroll
             className={`${s.hex} ${s.hex3}`}
             dangerouslySetInnerHTML={{__html: `
-                <video src=${Hex3Video} class=${s.hex3Image} autoPlay loop muted/>
+                <video src=${Hex3Video} class=${s.hex3Image} autoplay loop muted playsinline/>
             `}}
         >
         </div> 
