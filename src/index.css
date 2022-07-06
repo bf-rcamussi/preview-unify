@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 @font-face {
   font-family: montreal;
-  src: url(./assets/fonts/PPNeueMontreal-Book.ttf) format('truetype');
+  src: url(./assets/fonts/PPNeueMontreal-Medium.ttf) format('truetype');
 }
 
 :root {

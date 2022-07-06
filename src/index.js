@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './assets/fonts/PPNeueMontreal-Book.ttf';
+import './assets/fonts/PPNeueMontreal-Medium.ttf';
 import './assets/fonts/PPNeueBit-Bold.ttf';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';

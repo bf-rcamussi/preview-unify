@@ -18,6 +18,23 @@ import hex34 from 'assets/HexagonPattern/row3/4.png'
 import vid from 'assets/HexagonVideo/hexagon-1-extended.mp4'
 import gsap from "gsap";
 import outline from 'assets/HexagonPattern/outline.png';
+import { useRef } from "react";
+
+
+const HexVideo = () => {
+    return (
+        <div className={s.imageContainer}>
+                <div className={`${s.animHex} ${s.image}`}
+                    dangerouslySetInnerHTML={{__html: `
+                    <video class=${s.image} src=${vid} autoplay muted loop playsinline/>
+                    `}}
+                >
+                    
+                </div>
+            <img className={s.outline} src={outline}/>
+        </div>
+    )
+}
 
 const MiddleHexagons = () => {
 
@@ -54,21 +71,11 @@ const MiddleHexagons = () => {
                         <img className={s.image} src={hex13} />
                         <img className={s.outline} src={outline}/>
                     </div>
-                    <div className={s.imageContainer}>
-                        <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
-                        </div>
-                        <img className={s.outline} src={outline}/>
-                    </div>
+                    <HexVideo/>
                 </div>
 
                 <div className={`${s.row} ${s.row2}`}>
-                    <div className={s.imageContainer}>
-                        <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
-                        </div>
-                        <img className={s.outline} src={outline}/>
-                    </div>
+                    <HexVideo/>
                     <div className={s.imageContainer}>
                         <img className={s.image} src={hex21} />
                         <img className={s.outline} src={outline}/>
@@ -88,12 +95,7 @@ const MiddleHexagons = () => {
                 </div>
 
                 <div className={`${s.row} ${s.row3}`}>
-                    <div className={s.imageContainer}>
-                        <div className={`${s.animHex} ${s.image}`}>
-                            <video className={s.image} src={vid} playsinline autoplay loop muted/>
-                        </div>
-                        <img className={s.outline} src={outline}/>
-                    </div>
+                    <HexVideo/>
                     <div className={s.imageContainer}>
                         <img className={s.image} src={hex32} />
                         <img className={s.outline} src={outline}/>

@@ -9,6 +9,21 @@ import WhiteMoon from 'assets/Hero/moon.png';
 import Hex3Video from 'assets/HexagonVideo/hexagon-1-extended.mp4';
 import { gsap } from "gsap";
 
+
+const HexVideo = () => {
+    return (
+        <div
+            data-scroll-speed="3"
+            data-scroll
+            className={`${s.hex} ${s.hex3}`}
+            dangerouslySetInnerHTML={{__html: `
+                <video src=${Hex3Video} class=${s.hex3Image} autoPlay loop muted/>
+            `}}
+        >
+        </div> 
+    )
+}
+
 export default () => {
     const whiteMoon = useRef(null);
     const blackMoon = useRef(null);
@@ -50,13 +65,7 @@ export default () => {
                 src={Hex4} 
                 className={`${s.hex} ${s.hex4}`}
             />
-            <div
-                data-scroll-speed="3"
-                data-scroll
-                className={`${s.hex} ${s.hex3}`}
-            >
-                <video src={Hex3Video} className={`${s.hex3Image}`} playsinline autoplay loop muted/>
-            </div>  
+            <HexVideo/>
         </div>        
         
     )
